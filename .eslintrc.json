@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended"  // Uses the recommended rules from @typescript-eslint/eslint-plugin
+  ],
+  "plugins": ["prettier"],
+  "parser":  "@typescript-eslint/parser",  // Specifies the ESLint parser
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2015,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off",
+    "semi": ["error", "never"],
+		"comma-dangle": ["error", "always-multiline"],
+		"prettier/prettier": ["error", { "endOfLine": "auto" }],
+		"no-var-requires": "off",
+		"spaced-comment": "off",
+		"no-console": "warn",
+		"consistent-return": "off",
+		"func-names": "off",
+		"object-shorthand": "off",
+		"no-process-exit": "off",
+		"no-param-reassign": "off",
+		"no-return-await": "off",
+		"no-underscore-dangle": "off",
+		"class-methods-use-this": "off",
+		"prefer-destructuring": ["warn", { "object": true, "array": false }],
+		"no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+  }
+}
